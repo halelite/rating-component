@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(220, 13%, 9%);
+    height: 100vh;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.content-container {
+    background: hsl(214, 22%, 15%);
+    width: 320px;
+    height: 325px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px 25px 18px 25px;
+    border-radius: 1.3rem;
+    animation: fadeIn 0.4s;
+}
+
+.starPic {
+    background: rgba(134, 131, 131, 0.1);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#star {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.rating-section p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background: rgba(134, 131, 131, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+    padding: 11px 0;
+    font-size: 15px;
+    font-weight: 100px;
+    color: hsl(216, 12%, 54%);
+}
+
+.btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: background 0.5s linear;
+}
+
+button {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    width: 270px;
+    height: 35px;
+    border-radius: 2rem;
+    border: none;
+    margin: 0 auto;
+    padding: 11px;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    font-weight: 700;
+    transition: background 0.2s ease-in;
+}
+
+.thankU-section {
+    display: none;
+}
+
+.tnx {
+    width: 130px;
+    height: 80px;
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 25px;
+}
+
+.rateResult {
+    background: rgba(134, 131, 131, 0.1);
+    width: 150px;
+    height: 27px;
+    margin: auto;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 7px;
+    margin-bottom: 30px;
+}
+
+.rateResult p {
+    display: block;
+    font-size: 11px;
+    color: hsl(25, 85%, 58%);
+}
+
+.thankU-section h3 {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.para {
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+
+.active {
+    background-color: hsl(217, 12%, 63%);
+}
+
+.btn ~ .active {
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .content-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .starPic {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    button {
+        width: 98%;
+        height: 38px;
+        padding: 13px;
+    }
+    
+}
